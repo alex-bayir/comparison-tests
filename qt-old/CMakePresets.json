@@ -1,0 +1,25 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 21,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "android",
+            "toolchainFile": "/opt/sdk/android/ndk/28.0.13004108/build/cmake/android.toolchain.cmake",
+            "cacheVariables": {
+                "ANDROID_ABI": "x86_64",
+                "ANDROID_PLATFORM": "35",
+                "ANDROID_SDK": "/opt/sdk/android",
+                "CMAKE_FIND_ROOT_PATH_MODE_PACKAGE": "BOTH",
+                "ANDROID_BUILD_ABI_x86_64": "ON"
+            },
+            "environment": {
+                "CMAKE_PREFIX_PATH": "/opt/sdk/android/cmake/3.31.1"
+            },
+            "binaryDir": "${sourceDir}/build_android"
+        }
+    ]
+}

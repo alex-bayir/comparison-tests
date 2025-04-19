@@ -1,0 +1,17 @@
+FROM mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm
+
+ARG JDK="https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb"
+
+ENV JAVA_HOME='/usr/lib/jvm/default-java'
+
+RUN sudo apt update && sudo apt install -y watchman &&\
+    apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && rm -rf /var/lib/apt/lists/* &&\
+    git config --global --replace-all safe.directory '*'
+
+RUN if [ -n "$JDK" ]; then curl "$JDK" -o jdk.deb && sudo dpkg -i jdk.deb && rm jdk.deb && sudo ln -s $(ls -d "$(dirname "$JAVA_HOME")"/* | sed -n '1p') "$JAVA_HOME"; fi
+
+# RUN npm update -g && npm upgrade -g && npm install -g npm@latest expo@latest eas-cli@latest create-expo-app@latest
+
+USER $IMAGE_USER
+
+#docker build -f .devcontainer/dockerfile -t dev-containers/react-native/master .

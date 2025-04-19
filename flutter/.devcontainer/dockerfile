@@ -1,0 +1,24 @@
+FROM mcr.microsoft.com/devcontainers/base:debian-12
+#FROM debian:latest
+
+RUN apt-get update &&\
+    apt-get install -y --no-install-recommends sudo git curl unzip clang cmake ninja-build pkg-config libgtk-3-dev mesa-utils &&\
+    apt dist-upgrade -y && apt autoremove -y && apt autoclean -y && rm -rf /var/lib/apt/lists/* &&\
+    git config --global --replace-all safe.directory '*'
+
+ARG FLUTTER_REPOSITORY="https://github.com/flutter/flutter.git"
+ARG FLUTTER_LOCATION="/usr/bin/flutter"
+ARG JDK="https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.deb"
+
+ENV JAVA_HOME="/usr/lib/jvm/default-java"
+ENV FLUTTER_HOME="$FLUTTER_LOCATION"
+ENV PATH="$PATH:$FLUTTER_HOME/bin:$JAVA_HOME:$JAVA_HOME/bin"
+
+RUN mkdir "$FLUTTER_HOME" &&\
+    git clone "$FLUTTER_REPOSITORY" "$FLUTTER_HOME" &&\
+    chown 1000:1000 "$FLUTTER_HOME" -R &&\
+    if [ -n "$JDK" ]; then curl "$JDK" -o jdk.deb && sudo dpkg -i jdk.deb && rm jdk.deb && sudo ln -s $(ls -d "$(dirname "$JAVA_HOME")"/* | sed -n '1p') "$JAVA_HOME"; fi
+
+USER $IMAGE_USER
+
+#docker build -f .devcontainer/dockerfile -t dev-containers/flutter/master .

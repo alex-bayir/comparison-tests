@@ -1,0 +1,17 @@
+{
+	"name": "React Native",
+	"dockerFile": "./dockerfile",
+	"mounts":[
+		{"source":"${localEnv:ANDROID_HOME}","target": "/opt/sdk/android", "type": "bind"}
+	],
+	"forwardPorts": [8081],
+	"initializeCommand": "bash .devcontainer/init.sh",
+	"postCreateCommand": "bash .devcontainer/post.sh",
+	"containerEnv": {
+		"ANDROID_HOME":"/opt/sdk/android"
+	},
+	"remoteEnv": {
+	    "PATH": "${containerEnv:PATH}:${containerEnv:ANDROID_HOME}/cmdline-tools/latest/bin:${containerEnv:ANDROID_HOME}/platform-tools"
+	},
+	"runArgs": ["-p=8081:8081", "--env-file", ".devcontainer/.env"]
+}

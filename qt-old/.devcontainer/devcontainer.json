@@ -1,0 +1,22 @@
+{
+	"name": "QT",
+	"dockerFile": "./dockerfile",
+	"workspaceFolder":"/work",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/work,type=bind",
+	"mounts":[
+		{"source":"${localEnv:ANDROID_HOME}","target": "/opt/sdk/android", "type": "bind"}
+	],
+	"containerEnv": {
+		"ANDROID_HOME":"/opt/sdk/android"
+	},
+	"remoteEnv": {
+	    "PATH": "${containerEnv:PATH}:${containerEnv:ANDROID_HOME}/cmdline-tools/latest/bin:${containerEnv:ANDROID_HOME}/platform-tools",
+		"ANDROID_SDK_ROOT":"${containerEnv:ANDROID_HOME}",
+		"ANDROID_NDK_ROOT":"${containerEnv:ANDROID_HOME}/ndk/28.0.13004108"
+	},
+	"runArgs": [
+		"--mount","type=tmpfs,target=/tmp,tmpfs-mode=1777,tmpfs-size=4GB",
+		"--platform","linux/amd64","--cpus","8.0","--cpu-shares","1024","--memory","16GB","--memory-reservation","2GB","--name","qt-debian-bookworm"
+		//,"bash","-c","cmake -B build -S . -G Ninja -DQT_DEBUG_FIND_PACKAGE=ON && cmake --build build"
+	]
+}

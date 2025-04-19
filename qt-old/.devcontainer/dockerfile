@@ -1,0 +1,10 @@
+FROM docker.io/bensuperpc/qt:debian-bookworm-6.7.2
+#mcr.microsoft.com/devcontainers/base:debian-12
+#carlonluca/qt-dev:6.8.2
+ENV JAVA_HOME='/usr/lib/jvm/default-java'
+
+RUN if [ -n "$JDK" ]; then curl "$JDK" -o jdk.deb && sudo dpkg -i jdk.deb && rm jdk.deb && sudo ln -s $(ls -d "$(dirname "$JAVA_HOME")"/* | sed -n '1p') "$JAVA_HOME"; fi
+
+RUN git config --global --replace-all safe.directory '*'
+
+#docker build -f .devcontainer/dockerfile -t dev-containers/qt/master .

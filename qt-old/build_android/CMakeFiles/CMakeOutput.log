@@ -1,0 +1,182 @@
+The target system is: Android - 1 - x86_64
+The host system is: Linux - 6.12.13-amd64 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security;;
+Id flags: -c;--target=x86_64-none-linux-android35 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is Clang, found in "/work/build_android/CMakeFiles/3.25.1/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce3d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce3d5.dir/build.make CMakeFiles/cmTC_ce3d5.dir/build
+gmake[1]: Entering directory '/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA'
+Building CXX object CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o
+/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+Android (12896553, +pgo, +bolt, +lto, +mlgo, based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)
+Target: x86_64-none-linux-android35
+Thread model: posix
+InstalledDir: /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin
+ (in-process)
+ "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple x86_64-none-linux-android35 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA -resource-dir /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19 -dependency-file CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+ignoring nonexistent directory "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include
+ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android
+ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+End of search list.
+Linking CXX executable cmTC_ce3d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3d5.dir/link.txt --verbose=1
+/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3d5 
+Android (12896553, +pgo, +bolt, +lto, +mlgo, based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)
+Target: x86_64-none-linux-android35
+Thread model: posix
+InstalledDir: /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin
+ "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -z now -z relro -z max-page-size=16384 --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /system/bin/linker64 -o cmTC_ce3d5 /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtbegin_dynamic.o -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64 -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35 -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtend_android.o
+gmake[1]: Leaving directory '/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+    add: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include]
+    add: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+    add: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  collapse include dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include]
+  collapse include dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  collapse include dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce3d5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce3d5.dir/build.make CMakeFiles/cmTC_ce3d5.dir/build]
+  ignore line: [gmake[1]: Entering directory '/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA']
+  ignore line: [Building CXX object CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Android (12896553  +pgo  +bolt  +lto  +mlgo  based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)]
+  ignore line: [Target: x86_64-none-linux-android35]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple x86_64-none-linux-android35 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -fdebug-compilation-dir=/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/work/build_android/CMakeFiles/CMakeScratch/TryCompile-LKxlNA -resource-dir /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19 -dependency-file CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include -internal-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 19.0.0 based upon LLVM 19.0.0 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  ignore line: [ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/include]
+  ignore line: [ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  ignore line: [ /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_ce3d5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce3d5.dir/link.txt --verbose=1]
+  ignore line: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -static-libstdc++ -Wl --build-id=sha1 -Wl --no-undefined-version -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments   -v CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_ce3d5 ]
+  ignore line: [Android (12896553  +pgo  +bolt  +lto  +mlgo  based on r530567c) clang version 19.0.0 (https://android.googlesource.com/toolchain/llvm-project 97a699bf4812a18fb657c2779f5296a4ab2694d2)]
+  ignore line: [Target: x86_64-none-linux-android35]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  link line: [ "/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -z now -z relro -z max-page-size=16384 --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /system/bin/linker64 -o cmTC_ce3d5 /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtbegin_dynamic.o -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64 -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35 -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtend_android.o]
+    arg [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+    arg [--sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=16384] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_ce3d5] ==> ignore
+    arg [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtbegin_dynamic.o] ==> obj [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtbegin_dynamic.o]
+    arg [-L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64] ==> dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64]
+    arg [-L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35] ==> dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35]
+    arg [-L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+    arg [-L/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--build-id=sha1] ==> ignore
+    arg [--no-undefined-version] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [CMakeFiles/cmTC_ce3d5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lc++] ==> lib [c++]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lm] ==> lib [m]
+    arg [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtend_android.o] ==> obj [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtend_android.o]
+  remove lib [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  remove lib [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  collapse library dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64]
+  collapse library dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35]
+  collapse library dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+  collapse library dir [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+  implicit objs: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtbegin_dynamic.o;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35/crtend_android.o]
+  implicit dirs: [/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/19/lib/linux/x86_64;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/35;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: /work/build_android/CMakeFiles/CMakeScratch/TryCompile-zaFoqo
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4c4c3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4c4c3.dir/build.make CMakeFiles/cmTC_4c4c3.dir/build
+gmake[1]: Entering directory '/work/build_android/CMakeFiles/CMakeScratch/TryCompile-zaFoqo'
+Building CXX object CMakeFiles/cmTC_4c4c3.dir/src.cxx.o
+/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_STDATOMIC  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -fPIE -MD -MT CMakeFiles/cmTC_4c4c3.dir/src.cxx.o -MF CMakeFiles/cmTC_4c4c3.dir/src.cxx.o.d -o CMakeFiles/cmTC_4c4c3.dir/src.cxx.o -c /work/build_android/CMakeFiles/CMakeScratch/TryCompile-zaFoqo/src.cxx
+Linking CXX executable cmTC_4c4c3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c4c3.dir/link.txt --verbose=1
+/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=x86_64-none-linux-android35 --sysroot=/opt/sdk/android/ndk/28.0.13004108/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security    -static-libstdc++ -Wl,--build-id=sha1 -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments    CMakeFiles/cmTC_4c4c3.dir/src.cxx.o -o cmTC_4c4c3  -latomic -lm 
+gmake[1]: Leaving directory '/work/build_android/CMakeFiles/CMakeScratch/TryCompile-zaFoqo'
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+

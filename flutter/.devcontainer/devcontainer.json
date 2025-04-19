@@ -1,0 +1,15 @@
+{
+	"name": "Flutter",
+	"dockerFile": "./dockerfile",
+	"mounts":[
+		{"source":"${localEnv:ANDROID_HOME}","target": "/opt/sdk/android", "type": "bind"}
+	],
+	"postCreateCommand": "rm -rf .dart_tool build && dart --disable-analytics && flutter upgrade && flutter doctor -v",
+	"containerEnv": {
+		"ANDROID_HOME":"/opt/sdk/android"
+	},
+	"remoteEnv": {
+	    "PATH": "${containerEnv:PATH}:${containerEnv:ANDROID_HOME}/cmdline-tools/latest/bin:${containerEnv:ANDROID_HOME}/platform-tools"
+	},
+	"runArgs": []
+}
