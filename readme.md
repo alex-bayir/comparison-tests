@@ -41,7 +41,7 @@ adb shell am start-activity -W -n $app/.MainActivity && adb shell am force-stop 
 
 adb shell dumpsys meminfo $app
 
-adb shell 'echo "  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS" && top -bqd .0 | grep -E "[0-9]+ +u0_.+'$app'"' | tee $app.tsv
+adb shell 'echo "PID   USER         PR  NI VIRT  RES  SHR S  [%CPU] %MEM     TIME+ ARGS      REALTIME" && top -bqd .0 | grep -E "[0-9]+ +u0_.+'$app'" | while IFS= read -r line; do echo $line $(date +''%S.%N''); done' | tee $app.tsv
 ```
 
 "-v","/tmp/.X11-unix:/tmp/.X11-unix","-e","DISPLAY=$DISPLAY","--device","/dev/dri"
